@@ -1,0 +1,9 @@
+#ninja-slider .caption {
+    position:absolute;
+    top:100%;
+}
+
+#ninja-slider .slider-inner {padding-bottom: 100px!important;}
+#ninja-slider li {margin-bottom: 100px!important;}
+
+#ninja-slider ul {overflow:visible!important;}

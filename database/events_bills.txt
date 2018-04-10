@@ -1,0 +1,4 @@
+CREATE TABLE events_bills(
+    bill_id int NOT NULL,
+    event_id int NOT NULL
+)

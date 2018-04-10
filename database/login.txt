@@ -1,0 +1,6 @@
+CREATE TABLE login(
+    email varchar(60)  NOT NULL,
+    password varchar(100) NOT NULL,
+    run_id int NOT NULL,
+    PRIMARY KEY(email)
+)

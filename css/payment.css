@@ -1,0 +1,31 @@
+body{ margin-top:20px; }
+
+.container .b {
+    text-align: center;
+}
+
+.container .btn1 {
+position: absolute;
+top: 99%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: rgb(47, 61, 255);
+color: black;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.btn1:hover {
+    background-color: #47cf73;
+    }
+
+div.imglogo {
+margin: 5px;
+border: 1px solid #ffffff; 
+width: 250px;
+height: auto;
+}

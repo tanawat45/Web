@@ -1,0 +1,23 @@
+CREATE TABLE runners(
+    run_id int UNSIGNED NOT NULL AUTO_INCREMENT,
+    essn varchar(13) ,
+    frist_name varchar(30) NOT NULL,
+    last_name varchar(30) NOT NULL,
+    sex varchar(1) NOT NULL,
+    email varchar(30) NOT NULL,
+    brith_date DATE ,
+    blood varchar(3),
+    nationality varchar(20),
+    country varchar(30),
+    address varchar(255),
+    province varchar(20),
+    postcode varchar(5),
+    phone varchar(10),
+    disease  varchar(60),
+    medicine  varchar(60),
+    allergic_drug varchar(60),
+    emergency_contact_name varchar(60),
+    emergency_contact_phone varchar(10),
+    img varchar(60),
+    PRIMARY KEY(run_id)
+)

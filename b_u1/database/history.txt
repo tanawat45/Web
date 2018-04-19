@@ -1,0 +1,11 @@
+CREATE TABLE history(
+    run_id int UNSIGNED NOT NULL,
+    event_id int UNSIGNED NOT NULL,
+    size varchar(4) NOT NULL,
+    generation_competing varchar(30) NOT NULL,
+    getting varchar(100),
+    flag_full int(1),
+    flag_half int(1),
+    flag_mini int(1),
+    flag_fun int(1)
+)

@@ -1,0 +1,202 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+body {
+    
+    background-color: rgb(220, 220, 220);
+}
+
+.event-list {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.event-list > li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgb(51, 51, 51);
+    box-shadow: 0px 0px 40px rgba(51, 51, 51, 0.7);
+    padding: 0px;     
+    width: 100%;
+    margin-bottom: 10px;
+}
+.event-list > li > time {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 23, 148);
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.event-list > li:nth-child(even) > time {
+    background-color: rgb(253, 231, 253);
+}
+.event-list > li > time > span {
+    display: none;
+}
+.event-list > li > time > .day {
+    display: block;
+    font-size: 70pt;
+    font-weight: 100;
+    line-height: 1;
+}
+.event-list > li time > .month {
+    display: block;
+    font-size: 25pt;
+    font-weight: 990;
+    line-height: 1;
+}
+.event-list > li > p > a > img{
+    width: 100%;
+    height: 100%;
+}
+.event-list > li > .info {
+    padding-top: 5px;
+    text-align: center;   
+}
+.event-list > li > .info > .title {
+    font-size: 22pt;
+    font-weight: 600;
+    margin: 0px;
+    text-shadow: 1px 1.5px #0da83e;
+}
+.title a{
+    color: #47cf73 ;
+}
+.event-list > li > .info > ul,
+.event-list > li > .detail > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.event-list > li > .detail > ul {
+    margin: 0px;
+}
+.event-list > li > .info > ul > li,
+.event-list > li > .detail > ul > li {
+    display: table-cell;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0px;
+}
+.event-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+} 
+.event-list > li > .detail > ul > li {    
+    padding: 0px;
+}
+.event-list > li > .detail > ul > li > a {
+    padding: 3px 0px;
+} 
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .detail > ul > li:hover {
+    color: rgb(194, 54, 182);
+    
+}
+.additional a{
+    display: block;
+    width: 100%;
+    color: rgb(236, 163, 54) !important;
+}
+.register a{
+    display: block;
+    width: 100%;
+    color: rgb(255, 0, 0) !important;
+}
+.searchrunner a {
+    display: block;
+    width: 100%;
+    color: rgb(86, 84, 212) !important;
+}
+
+
+@media (min-width: 800px) {
+   
+    .event-list > li {
+        position: relative;
+        display: block;
+        width: 750px;
+        height: 150px;
+        padding: 0px;
+        margin: -7px;
+        margin-bottom: 25px;
+        
+    }
+    .event-list > li > time, 
+    .event-list > li > p > a > img{
+        display: inline-block;
+    }
+    .event-list > li > time, 
+    .event-list > li > p > a > img {
+        width: 150px;
+        float: left;
+    }
+    .event-list > li > .info{
+        background-color: rgb(245, 245, 245);
+        overflow: hidden;
+    }
+    .event-list > li > time{
+        width: 110px;
+        height: 150px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .event-list > li > p > a > img {
+        width: 280px;
+        height: 150px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .event-list > li > .info {
+        position: relative;
+        height: 150px;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 40px;
+        
+    }	
+    .event-list > li > .info > .title {
+        padding: 0px 8px;
+        font-size: 24pt;
+        font-weight: 400;
+    }
+
+    .event-list > li > .info > ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        border-top: 1px solid rgb(222, 127, 241)
+    }
+    .event-list > li > .detail {
+        position: absolute;
+        top: 0px;
+        right: 75px;
+        display: block;
+        width: 50px;
+    }
+    .event-list > li > .detail > ul {
+        margin-left: 5px;
+        border-left: 1px solid rgb(226, 163, 235);
+    }
+    .event-list > li > .detail > ul > li {			
+        display: block;
+        padding: 0px;
+    }
+    .event-list > li > .detail > ul > li > a {
+        display: block;
+        width: 120px;
+        padding: 10px 0px 9px;
+    }
+    .show-on-hover:hover > ul.dropdown-menu {
+        display: block;    
+    }
+}

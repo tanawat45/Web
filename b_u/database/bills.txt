@@ -1,0 +1,8 @@
+CREATE TABLE bills(
+    bill_id int UNSIGNED NOT NULL AUTO_INCREMENT,
+    event_id int UNSIGNED NOT NULL,
+    payment int,
+    pay_through varchar(60),
+    flag_success int(1),
+    PRIMARY KEY(bill_id)
+)

@@ -1,0 +1,11 @@
+CREATE TABLE runners_bills(
+    bill_id int UNSIGNED NOT NULL,
+    run_id int UNSIGNED NOT NULL,
+    flag_full int(1),
+    flag_half int(1),
+    flag_mini int(1),
+    flag_fun int(1),
+    getting int(1),
+    size varchar(4),
+    type_shirt varchar(1)
+)

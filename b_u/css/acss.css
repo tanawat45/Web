@@ -1,0 +1,351 @@
+@import "font-awesome.min.css";
+@import "font-awesome-ie7.min.css";
+
+.atrain {
+    height: 10px;
+    }
+
+.entry:not(:first-of-type)
+{
+    margin-top: 10px;
+}
+
+.glyphicon
+{
+    font-size: 12px;
+}
+
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+
+/* Space out content a bit */
+
+/* Hiding the checkbox, but allowing it to be focused */
+.badgebox
+{
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+	width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+    
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge
+{
+    /* Move the check mark back when checked */
+	text-indent: 0;
+}
+
+.container {
+      width: 600px;
+      margin: 100px auto; 
+        }
+        .progressbar {
+            counter-reset: step;
+        }
+        .progressbar li {
+            list-style-type: none;
+            width: 20%;
+            float: left;
+            font-size: 12px;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            color: #7d7d7d;
+        }
+        .progressbar li:before {
+            width: 30px;
+            height: 30px;
+            content: counter(step);
+            counter-increment: step;
+            line-height: 30px;
+            border: 2px solid #7d7d7d;
+            display: block;
+            text-align: center;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .progressbar li:after {
+            width: 100%;
+            height: 2px;
+            content: '';
+            position: absolute;
+            background-color: #7d7d7d;
+            top: 15px;
+            left: -50%;
+            z-index: -1;
+        }
+        .progressbar li:first-child:after {
+            content: none;
+        }
+        .progressbar li.active {
+            color: green;
+        }
+        .progressbar li.active:before {
+            border-color: #55b776;
+        }
+        .progressbar li.active + li:after {
+            background-color: #55b776;
+        }
+
+        /* Container needed to position the button. Adjust the width as needed */
+    .container {
+    position: relative;
+    width: 100%;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    }
+
+    /* Make the image responsive */
+    .container img {
+    width: 100%;
+    height: auto;
+    }
+
+    /* Style the button and place it in the middle of the container/image */
+  
+    .container .pume {
+        background-color: rgb(0, 238, 255);
+        color: white;
+        font-size: 16px;
+        padding: 12px 48px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        }    
+
+    .container .btnn {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-90%, -10%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(21, 7, 102);
+    color: white;
+    font-size: 16px;
+    padding: 12px 48px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+    .container .btn:hover {
+    background-color: black;
+    }
+
+    body {font-family: Arial;}
+
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    header {
+  width: 20ch;
+  background-color: rgb(100, 178, 241);
+  border: 1px solid #DDD
+}
+
+#logo {
+  float: left;
+  background-color: rgb(100, 178, 241);
+  padding: 10px;
+  position: relative;
+}
+
+/* from: http://stackoverflow.com/questions/796087/make-a-div-into-a-link */
+#logo a span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+}
+
+#logo:hover {
+	background-color: rgb(100, 178, 241);  
+}
+
+#logo:active {
+	background-color: #A9A;
+  top: +2px;
+}
+
+header nav {
+  float: right;
+  padding: 10px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}  /* for IE/Mac */
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
